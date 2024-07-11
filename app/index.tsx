@@ -39,7 +39,7 @@ export default function index() {
           <Icon name="flag-outline" size={20} color="white" />
           <Text style={styles.menuText}>Flagged email</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/home')}>
+        <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/tasks')}>
           <Icon name="home-outline" size={20} color="white" />
           <Text style={styles.menuText}>Tasks</Text>
         </TouchableOpacity>
