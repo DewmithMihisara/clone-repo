@@ -19,10 +19,10 @@ export default function important() {
         <Text style={styles.headerTitle}>Important</Text>
       </View>
       <View style={styles.content}>
-        {/* <Image
-                    source={require('../assets/img/important.png')} // Replace with your image path
-                    style={styles.image}
-                /> */}
+        <Image
+          source={require('../assets/img/bg/IMG_2364-removebg-preview.png')} // Replace with your image path
+          style={styles.image}
+        />
         <Text style={styles.description}>Try starring some tasks to see them here.</Text>
       </View>
       <TouchableOpacity style={styles.addButton}>
@@ -69,14 +69,16 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   image: {
-    width: 100,
-    height: 100,
+    width: 150,
+    height: 150,
     marginBottom: 20,
   },
   description: {
     color: '#F0B8C3',
     fontSize: 16,
     textAlign: 'center',
+    marginLeft: 30,
+    marginRight: 30,
   },
   addButton: {
     flexDirection: 'row',
