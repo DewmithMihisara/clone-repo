@@ -22,10 +22,10 @@ export default function flaged() {
                 </View>
             </View>
             <View style={styles.content}>
-                {/* <Image
-                    source={require('../assets/img/important.png')} // Replace with your image path
+                <Image
+                    source={require('../assets/img/bg/IMG_2369-removebg-preview.png')}
                     style={styles.image}
-                /> */}
+                />
                 <Text style={styles.description}>Massaged you flag will show us as tasks here.</Text>
             </View>
         </View>
@@ -59,8 +59,8 @@ const styles = StyleSheet.create({
         fontSize: 18,
     },
     headerContainer: {
-        flexDirection: 'row', 
-        alignItems: 'center', 
+        flexDirection: 'row',
+        alignItems: 'center',
     },
     headerTitle: {
         color: '#E96D6B',
@@ -74,13 +74,15 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     image: {
-        width: 100,
-        height: 100,
+        width: 150,
+        height: 150,
         marginBottom: 20,
     },
     description: {
         color: '#E96D6B',
         fontSize: 16,
         textAlign: 'center',
+        marginLeft: 30,
+        marginRight: 30,
     },
 });
