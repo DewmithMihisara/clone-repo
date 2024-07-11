@@ -1,50 +1,108 @@
-# Welcome to your Expo app 👋
+# Microsoft To Do Clone
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to the Microsoft To Do Clone app! This project is a recreation of the popular Microsoft To Do app, built using React Native, TypeScript, and Expo. The app allows users to manage their tasks efficiently with features such as task creation, deletion, and categorization.
 
-## Get started
+## Table of Contents
 
-1. Install dependencies
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- **Task Management:** Create, edit, delete, and categorize tasks.
+- **Due Dates:** Set due dates and reminders for tasks.
+- **Task Prioritization:** Mark tasks as important.
+- **User Authentication:** Sign up and log in to save tasks.
+- **Dark Mode:** Switch between light and dark themes.
 
-   ```bash
-    npx expo start
-   ```
+## Screenshots
 
-In the output, you'll find options to open the app in a
+![4785B310-9853-4075-B833-4904A532BDB1](https://github.com/DewmithMihisara/microsoft-to-do-clone/assets/124574193/e4ea4239-cd06-4c4b-bdb1-8945ed776eaa)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Installation
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+To get started with the project, follow these steps:
 
-## Get a fresh project
+1. **Clone the repository:**
 
-When you're ready, run:
+    ```bash
+    git clone https://github.com/your_username/microsoft-to-do-clone.git
+    cd microsoft-to-do-clone
+    ```
 
-```bash
-npm run reset-project
-```
+2. **Install dependencies:**
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+    ```bash
+    npm install
+    ```
 
-## Learn more
+3. **Start the Expo server:**
 
-To learn more about developing your project with Expo, look at the following resources:
+    ```bash
+    expo start
+    ```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+4. **Run the app on your device or emulator:**
 
-## Join the community
+    - For iOS: Use the Expo Go app.
+    - For Android: Use the Expo Go app or an emulator.
 
-Join our community of developers creating universal apps.
+## Usage
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. **Add Tasks:** Tap the "Add Task" button to create a new task.
+2. **View Tasks:** View your tasks on the home screen, and tap a task to see more details.
+3. **Edit/Delete Tasks:** Swipe left on a task to edit or delete it.
+4. **Set Reminders:** Add due dates and reminders to your tasks.
+5. **Switch Themes:** Toggle between light and dark mode in the settings.
+
+## Contributing
+
+We welcome contributions to enhance the functionality and user experience of this app! To contribute:
+
+1. **Fork the repository.**
+2. **Create a new branch:**
+
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+
+3. **Make your changes and commit them:**
+
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+
+4. **Push to the branch:**
+
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+
+5. **Submit a pull request.**
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Feel free to reach out to me for any inquiries, collaboration opportunities, or just to say hello! You can contact me via:
+
+* Email : mihisaralokuhewage@gmail.com
+* LinkedIn : [https://linkedin.com/in/dewmith-mihisara-67861a202](https://linkedin.com/in/dewmith-mihisara-67861a202)
+* Twitter : [https://twitter.com/Zyne_Galata](https://twitter.com/Zyne_Galata)
+
+***
+</h5>
+<div align="center">
+  
+![repo size](https://img.shields.io/github/repo-size/DewmithMihisara/microsoft-to-do-clone?label=Repo%20Size&style=for-the-badge&labelColor=black&color=20bf6b)
+![GitHub stars](https://img.shields.io/github/stars/DewmithMihisara/microsoft-to-do-clone?&labelColor=black&color=f7b731&style=for-the-badge)
+![GitHub LastCommit](https://img.shields.io/github/last-commit/DewmithMihisara/microsoft-to-do-clone?logo=github&labelColor=black&color=d1d8e0&style=for-the-badge)
+
+</div>
