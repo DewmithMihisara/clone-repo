@@ -19,10 +19,10 @@ export default function tasks() {
         <Text style={styles.headerTitle}>Tasks</Text>
       </View>
       <View style={styles.content}>
-        {/* <Image
-                    source={require('../assets/img/important.png')} // Replace with your image path
-                    style={styles.image}
-                /> */}
+              <Image
+                  source={require('../assets/img/bg/_-removebg-preview.png')} 
+                  style={styles.image}
+              />
         <Text style={styles.description}>Tasks show up hereif they aren't part of any lists you've created.</Text>
       </View>
       <TouchableOpacity style={styles.addButton}>
@@ -75,14 +75,16 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   image: {
-    width: 100,
-    height: 100,
+    width: 150,
+    height: 150,
     marginBottom: 20,
   },
   description: {
     color: '#7B91E4',
     fontSize: 16,
     textAlign: 'center',
+    marginLeft: 30,
+    marginRight: 30,
   },
   addButton: {
     flexDirection: 'row',
