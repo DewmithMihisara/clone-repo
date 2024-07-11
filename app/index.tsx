@@ -2,20 +2,22 @@ import React from 'react';
 import { SafeAreaView, ScrollView, View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useRouter } from 'expo-router';
+import { Feather } from '@expo/vector-icons';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 export default function index() {
   const router = useRouter();
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
+      <ScrollView contentContainerStyle={styles.scrollViewContent}>
         <View style={styles.profileContainer}>
           <Image
             source={require('../assets/img/joni.png')}
             style={styles.profileImage}
           />
-          <Text style={styles.profileName}>Jony Sing</Text>
+          <Text style={styles.profileName}>Jonathan Siriwardana</Text>
         </View>
-        <TouchableOpacity style={styles.menuItem} onPress={() =>router.push('/myDay')}>
+        <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/myDay')}>
           <Icon name="sunny-outline" size={20} color="white" />
           <Text style={styles.menuText}>My Day</Text>
         </TouchableOpacity>
@@ -43,6 +45,18 @@ export default function index() {
           <Icon name="home-outline" size={20} color="#7B91E4" />
           <Text style={styles.menuText}>Tasks</Text>
         </TouchableOpacity>
+
+        <View style={styles.separator} />
+
+        <View style={styles.bottomBtn}>
+          <TouchableOpacity style={styles.addButton}>
+            <Feather name="plus" size={24} color="white" />
+            <Text style={styles.addButtonText}>Add a Task</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.iconButton}>
+            <MaterialCommunityIcons name="note-plus-outline" size={24} color="white" />
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -84,6 +98,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 16,
   },
+  scrollViewContent: {
+    paddingBottom: 300, 
+  },
   menuText: {
     color: 'white',
     fontSize: 16,
@@ -105,5 +122,37 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     marginLeft: 16,
+  },
+  separator: {
+    height: 1,
+    backgroundColor: '#333',
+    marginVertical: 5,
+    marginLeft: 16,
+    marginRight: 16,
+  },
+  addButtonText: {
+    color: '#FFFFFF',
+    fontSize: 18,
+    marginLeft: 16,
+    paddingTop: 5,
+  },
+  addButton: {
+    flexDirection: 'row',
+    marginLeft: 16,
+    borderRadius: 8,
+  },
+  bottomBtn: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    flexDirection: 'row', 
+    justifyContent: 'space-between', 
+    alignItems: 'center', 
+    backgroundColor: '#000',
+  },
+  iconButton: {
+    padding: 16, 
+    borderRadius: 5, 
   },
 });
