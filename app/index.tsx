@@ -79,7 +79,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 16,
-    // paddingTop: useHeaderHeight(),
   },
   headerTime: {
     color: 'white',
