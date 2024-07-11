@@ -15,7 +15,7 @@ export default function index() {
           />
           <Text style={styles.profileName}>Jony Sing</Text>
         </View>
-        <TouchableOpacity style={styles.menuItem} onPress={() =>router.push('/important')}>
+        <TouchableOpacity style={styles.menuItem} onPress={() =>router.push('/myDay')}>
           <Icon name="sunny-outline" size={20} color="white" />
           <Text style={styles.menuText}>My Day</Text>
         </TouchableOpacity>
