@@ -4,19 +4,26 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import { useRouter } from 'expo-router';
 import { Feather } from '@expo/vector-icons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import { SimpleLineIcons } from '@expo/vector-icons';
 
 export default function index() {
   const router = useRouter();
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
-        <View style={styles.profileContainer}>
-          <Image
-            source={require('../assets/img/joni.png')}
-            style={styles.profileImage}
-          />
-          <Text style={styles.profileName}>Jonathan Siriwardana</Text>
+        <View style={styles.header}>
+          <View style={styles.profileContainer}>
+            <Image
+              source={require('../assets/img/joni.png')}
+              style={styles.profileImage}
+            />
+            <Text style={styles.profileName}>Jonathan Siriwardana</Text>
+          </View>
+          <TouchableOpacity style={styles.iconButton}>
+            <SimpleLineIcons name="magnifier" size={20} color="white" />
+          </TouchableOpacity>
         </View>
+
         <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/myDay')}>
           <Icon name="sunny-outline" size={20} color="white" />
           <Text style={styles.menuText}>My Day</Text>
@@ -81,7 +88,6 @@ const styles = StyleSheet.create({
   profileContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 16,
   },
   profileImage: {
     width: 40,
@@ -99,7 +105,7 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   scrollViewContent: {
-    paddingBottom: 300, 
+    paddingBottom: 300,
   },
   menuText: {
     color: 'white',
@@ -146,13 +152,13 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    flexDirection: 'row', 
-    justifyContent: 'space-between', 
-    alignItems: 'center', 
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     backgroundColor: '#000',
   },
   iconButton: {
-    padding: 16, 
-    borderRadius: 5, 
+    padding: 16,
+    borderRadius: 5,
   },
 });
