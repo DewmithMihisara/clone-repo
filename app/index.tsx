@@ -20,12 +20,12 @@ export default function index() {
             <Text style={styles.profileName}>Jonathan Siriwardana</Text>
           </View>
           <TouchableOpacity style={styles.iconButton}>
-            <SimpleLineIcons name="magnifier" size={20} color="white" />
+            <SimpleLineIcons name="magnifier" size={20} color="#959595" />
           </TouchableOpacity>
         </View>
 
         <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/myDay')}>
-          <Icon name="sunny-outline" size={20} color="white" />
+          <Icon name="sunny-outline" size={20} color="#959595" />
           <Text style={styles.menuText}>My Day</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/important')}>
@@ -57,11 +57,11 @@ export default function index() {
 
         <View style={styles.bottomBtn}>
           <TouchableOpacity style={styles.addButton}>
-            <Feather name="plus" size={24} color="white" />
+            <Feather name="plus" size={24} color="#959595" />
             <Text style={styles.addButtonText}>Add a Task</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.iconButton}>
-            <MaterialCommunityIcons name="note-plus-outline" size={24} color="white" />
+            <MaterialCommunityIcons name="note-plus-outline" size={24} color="#959595" />
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   scrollViewContent: {
-    paddingBottom: 300,
+    paddingBottom: 330,
   },
   menuText: {
     color: 'white',
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     marginRight: 16,
   },
   addButtonText: {
-    color: '#FFFFFF',
+    color: '#959595',
     fontSize: 18,
     marginLeft: 16,
     paddingTop: 5,
