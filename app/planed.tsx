@@ -31,10 +31,10 @@ export default function planed() {
                 </View>
             </View>
             <View style={styles.content}>
-                {/* <Image
-                    source={require('../assets/img/important.png')} // Replace with your image path
+                <Image
+                    source={require('../assets/img/bg/IMG_2366-removebg-preview.png')}
                     style={styles.image}
-                /> */}
+                />
                 <Text style={styles.description}>Tasks with due dates or reminders show up here.</Text>
             </View>
             <TouchableOpacity style={styles.addButton}>
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         // marginLeft: 8,
     },
-    filter2 :{
+    filter2: {
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: '#212121',
@@ -113,14 +113,16 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     image: {
-        width: 100,
-        height: 100,
+        width: 150,
+        height: 150,
         marginBottom: 20,
     },
     description: {
         color: '#80DCD1',
         fontSize: 16,
         textAlign: 'center',
+        marginLeft: 30,
+        marginRight: 30,
     },
     addButton: {
         flexDirection: 'row',
