@@ -27,7 +27,7 @@ export default function index() {
           <Icon name="calendar-outline" size={20} color="white" />
           <Text style={styles.menuText}>Planned</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/home')}>
+        <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/completed')}>
           <Icon name="checkmark-done-outline" size={20} color="white" />
           <Text style={styles.menuText}>Completed</Text>
         </TouchableOpacity>
