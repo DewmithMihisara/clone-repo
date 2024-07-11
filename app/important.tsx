@@ -12,7 +12,7 @@ export default function important() {
       <View style={styles.header}>
         <TouchableOpacity onPress={() => router.push('/')} style={styles.backButton}>
           <View style={styles.backButtonContent}>
-            <AntDesign name="left" size={20} color="#FF6F61" />
+            <AntDesign name="left" size={20} color="#F0B8C3" />
             <Text style={styles.backButtonText}>Lists</Text>
           </View>
         </TouchableOpacity>
@@ -46,12 +46,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'flex-start',
   },
-  timeText: {
-    color: 'white',
-    fontSize: 20,
-    textAlign: 'right',
-    width: '100%',
-  },
   backButton: {
     marginTop: 10,
     marginBottom: 10,
@@ -61,11 +55,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   backButtonText: {
-    color: '#FF6F61',
+    color: '#F0B8C3',
     fontSize: 18,
   },
   headerTitle: {
-    color: '#FF6F61',
+    color: '#F0B8C3',
     fontSize: 36,
     fontWeight: 'bold',
   },
@@ -80,19 +74,19 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   description: {
-    color: '#FF6F61',
+    color: '#F0B8C3',
     fontSize: 16,
     textAlign: 'center',
   },
   addButton: {
     flexDirection: 'row',
-    backgroundColor: '#333',
+    backgroundColor: '#212121',
     padding: 16,
     margin: 16,
     borderRadius: 8,
   },
   addButtonText: {
-    color: '#FF6F61',
+    color: '#F0B8C3',
     fontSize: 18,
   },
 });

@@ -12,7 +12,7 @@ export default function tasks() {
       <View style={styles.header}>
         <TouchableOpacity onPress={() => router.push('/')} style={styles.backButton}>
           <View style={styles.backButtonContent}>
-            <AntDesign name="left" size={20} color="#FF6F61" />
+            <AntDesign name="left" size={20} color="#7B91E4" />
             <Text style={styles.backButtonText}>Lists</Text>
           </View>
         </TouchableOpacity>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     paddingTop: 15,
     paddingBottom: 25,
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#000000',
     justifyContent: 'space-between',
   },
   header: {
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   timeText: {
-    color: 'white',
+    color: '#7B91E4',
     fontSize: 20,
     textAlign: 'right',
     width: '100%',
@@ -61,11 +61,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   backButtonText: {
-    color: '#FF6F61',
+    color: '#7B91E4',
     fontSize: 18,
   },
   headerTitle: {
-    color: '#FF6F61',
+    color: '#7B91E4',
     fontSize: 36,
     fontWeight: 'bold',
   },
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   description: {
-    color: '#FF6F61',
+    color: '#7B91E4',
     fontSize: 16,
     textAlign: 'center',
   },
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   addButtonText: {
-    color: '#FF6F61',
+    color: '#7B91E4',
     fontSize: 18,
   },
 });

@@ -17,7 +17,7 @@ export default function flaged() {
                     </View>
                 </TouchableOpacity>
                 <View style={styles.headerContainer}>
-                    <Icon name="flag-outline" size={35} color="white" />
+                    <Icon name="flag-outline" size={35} color="#E96D6B" />
                     <Text style={styles.headerTitle}>Flagged email</Text>
                 </View>
             </View>
@@ -46,12 +46,6 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'flex-start',
     },
-    timeText: {
-        color: 'white',
-        fontSize: 20,
-        textAlign: 'right',
-        width: '100%',
-    },
     backButton: {
         marginTop: 10,
         marginBottom: 10,
@@ -61,7 +55,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     backButtonText: {
-        color: '#FF6F61',
+        color: '#E96D6B',
         fontSize: 18,
     },
     headerContainer: {
@@ -69,7 +63,7 @@ const styles = StyleSheet.create({
         alignItems: 'center', 
     },
     headerTitle: {
-        color: '#FF6F61',
+        color: '#E96D6B',
         fontSize: 36,
         fontWeight: 'bold',
         marginLeft: 15,
@@ -85,7 +79,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     description: {
-        color: '#FF6F61',
+        color: '#E96D6B',
         fontSize: 16,
         textAlign: 'center',
     },

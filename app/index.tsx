@@ -20,27 +20,27 @@ export default function index() {
           <Text style={styles.menuText}>My Day</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/important')}>
-          <Icon name="star-outline" size={20} color="white" />
+          <Icon name="star-outline" size={20} color="#F0B8C3" />
           <Text style={styles.menuText}>Important</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/home')}>
-          <Icon name="calendar-outline" size={20} color="white" />
+        <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/planed')}>
+          <Icon name="calendar-outline" size={20} color="#80DCD1" />
           <Text style={styles.menuText}>Planned</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/completed')}>
-          <Icon name="checkmark-done-outline" size={20} color="white" />
+          <Icon name="checkmark-done-outline" size={20} color="#EDC4A6" />
           <Text style={styles.menuText}>Completed</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/assigned')}>
-          <Icon name="person-outline" size={20} color="white" />
+          <Icon name="person-outline" size={20} color="#9ED4BC" />
           <Text style={styles.menuText}>Assigned to me</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/flaged')}>
-          <Icon name="flag-outline" size={20} color="white" />
+          <Icon name="flag-outline" size={20} color="#E96D6B" />
           <Text style={styles.menuText}>Flagged email</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.menuItem} onPress={() => router.push('/tasks')}>
-          <Icon name="home-outline" size={20} color="white" />
+          <Icon name="home-outline" size={20} color="#7B91E4" />
           <Text style={styles.menuText}>Tasks</Text>
         </TouchableOpacity>
       </ScrollView>
