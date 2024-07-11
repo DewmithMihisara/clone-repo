@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, ImageBackground } from 'react-native';
 import { useRouter } from 'expo-router';
 import { AntDesign, Entypo } from '@expo/vector-icons';
 
@@ -13,36 +13,38 @@ export default function myDay() {
     });
 
     return (
-        <View style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity onPress={() => router.push('/')} style={styles.backButton}>
-                    <View style={styles.backButtonContent}>
-                        <AntDesign name="left" size={20} color="#000" />
-                        <Text style={styles.backButtonText}>Lists</Text>
-                    </View>
+        <ImageBackground
+            source={require('../assets/img/bg/low-angle-shot-berliner-fernsehturm-berlin-germany.jpg')}
+            style={styles.background}>
+            <View style={styles.container}>
+                <View style={styles.header}>
+                    <TouchableOpacity onPress={() => router.push('/')} style={styles.backButton}>
+                        <View style={styles.backButtonContent}>
+                            <AntDesign name="left" size={20} color="white" />
+                            <Text style={styles.backButtonText}>Lists</Text>
+                        </View>
+                    </TouchableOpacity>
+                    <Text style={styles.headerTitle}>My Day</Text>
+                    <Text style={styles.dateText}>{currentDate}</Text>
+                </View>
+                <TouchableOpacity style={styles.addButton}>
+                    <Text style={styles.addButtonText}>+ Add a Task</Text>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>My Day</Text>
-                <Text style={styles.dateText}>{currentDate}</Text>
             </View>
-            {/* <View style={styles.content}>
-                <Image
-                    source={{ uri: 'https://example.com/path-to-your-image.jpg' }} // Replace with your image URL
-                    style={styles.image}
-                />
-            </View> */}
-            <TouchableOpacity style={styles.addButton}>
-                <Text style={styles.addButtonText}>+ Add a Task</Text>
-            </TouchableOpacity>
-        </View>
+        </ImageBackground>
     );
 }
 
 const styles = StyleSheet.create({
+    background: {
+        flex: 1,
+        resizeMode: 'cover',
+        justifyContent: 'center',
+    },
     container: {
         paddingTop: 15,
         paddingBottom: 25,
         flex: 1,
-        backgroundColor: '#fff',
         justifyContent: 'space-between',
     },
     header: {
@@ -51,7 +53,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
     },
     timeText: {
-        color: '#000',
+        color: 'white',
         fontSize: 20,
         textAlign: 'right',
         width: '100%',
@@ -65,17 +67,17 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     backButtonText: {
-        color: '#000',
+        color: 'white',
         fontSize: 18,
         marginLeft: 5,
     },
     headerTitle: {
-        color: '#000',
+        color: 'white',
         fontSize: 36,
         fontWeight: 'bold',
     },
     dateText: {
-        color: '#000',
+        color: 'white',
         fontSize: 18,
         marginTop: 5,
     },
@@ -101,7 +103,7 @@ const styles = StyleSheet.create({
         borderRadius: 8,
     },
     addButtonText: {
-        color: '#FF6F61',
+        color: 'white',
         fontSize: 18,
     },
 });
